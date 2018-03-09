@@ -11,7 +11,7 @@ var yRan = random (0, 400)
 
 
 function setup (){
-    createCanvas (600, 400);
+    createCanvas (1000, 600);
 
 //gradient colors
   push()
