@@ -28,3 +28,11 @@ function draw() {
 function squares(x,y){
   rect(x, y, 10, 10);
 }
+
+function mousePressed() {
+  loop();
+}
+
+function mouseReleased() {
+  noLoop();
+}

@@ -1,12 +1,14 @@
 var x = 0;
+var xspeed = 9
 var y = 240;
 
 function setup(){
   createCanvas(630, 480);
-  background(0)
 }
 
 function draw(){
+  background(0)
+
   if (mouseX > 300){
     fill (84, 203,140);
 }
@@ -67,9 +69,9 @@ function draw(){
   rect(250 , 450, 30, 30);
   rect(350 , 450, 30, 30);
 
-  x = x + 1;
-  if (x > 600){
-    x = 30;
+  x = x + xspeed;
+  if (x > windowWidth || x < 0 ){
+      xspeed = -xspeed;
   }
 
   fill(180, 0, 255);
